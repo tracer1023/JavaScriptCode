@@ -1,5 +1,5 @@
-function myInstanceof(left, right) {
-    if (typeof left !== 'object' || left === null) {
+function myInstanceOf(left, right) {
+    if (typeof left !== 'object' || left == null) {
         return false;
     }
     let proto = Object.getPrototypeOf(left);
@@ -10,6 +10,6 @@ function myInstanceof(left, right) {
         if (proto == right.prototype) {
             return true;
         }
-        proto = Object.getPrototypeOf(proto)
+        proto = Object.getPrototypeOf(left);
     }
 }
