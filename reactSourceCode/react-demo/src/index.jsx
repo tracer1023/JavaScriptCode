@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function functioComponent(props) {
+    return
+}
+
 const today = (
     <div className="border">
         <h1>今天又是美好的一天</h1>

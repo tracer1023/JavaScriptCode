@@ -1,0 +1,1 @@
+function Component(props.context, updater)
