@@ -53,6 +53,6 @@ Function.prototype.bind = function (context) {
     const args = Array.from(arguments).slice(1);
     return function () {
         const allArgs = args.contact(Array.from(arguments));
-        return allArgs.length > 0 ? ctx.func(...allArgs) : ctx.func()
+        return allArgs.length > 0 ? ctx.func(...allArgs) : ctx.func();
     }
 }
