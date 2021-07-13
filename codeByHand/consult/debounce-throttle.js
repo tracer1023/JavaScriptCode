@@ -12,7 +12,7 @@ function debounced(fn, delay = 500) {
 
     return function () {
         if (timer) {
-            clearInterval(timer)
+            clearTimeout(timer)
         }
         timer = setTimeout(() => {
             fn.apply(this, arguments)
